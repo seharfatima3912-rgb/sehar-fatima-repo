@@ -1,0 +1,164 @@
+[0m18:34:08.481358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2E9C41D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2E7790E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2EC63F9D0>]}
+
+
+============================== 18:34:08.493021 | e5c75bc0-fe13-418e-888d-234aa0460687 ==============================
+[0m18:34:08.493021 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m18:34:08.494718 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sehar_Fatima\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select test_table', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\survey2\\survey2\\logs'}
+[0m18:34:08.560387 [debug] [MainThread]: Tracking: tracking
+[0m18:34:10.614411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e5c75bc0-fe13-418e-888d-234aa0460687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FE534D60>]}
+[0m18:34:10.693448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e5c75bc0-fe13-418e-888d-234aa0460687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FE5EB570>]}
+[0m18:34:10.694366 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m18:34:11.222961 [debug] [MainThread]: checksum: 4396dc23e859b3851fad708c90626262f7886e80dc4d6be758d18955a6bcc971, vars: {}, profile: survey2, target: dev, version: 1.13.0b1
+[0m18:34:11.224673 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:34:11.225650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e5c75bc0-fe13-418e-888d-234aa0460687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FE4F4150>]}
+[0m18:34:16.241197 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m18:34:16.424512 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.survey2.my_second_dbt_model' (models\example\my_second_dbt_model.sql) depends on a node named 'my_first_dbt_model' which was not found
+[0m18:34:16.426116 [debug] [MainThread]: Command `dbt run` failed at 18:34:16.425940 after 8.28 seconds
+[0m18:34:16.426657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FFD05C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FFD06210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2EC593690>]}
+[0m18:34:16.427144 [debug] [MainThread]: Flushing usage events
+[0m18:34:25.577796 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:35:31.596324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8A1051D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B89EBA0E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8A3A4F9D0>]}
+
+
+============================== 18:35:31.603189 | 9638584a-8dd6-43b9-887e-6c03f68bf4ea ==============================
+[0m18:35:31.603189 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m18:35:31.604104 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sehar_Fatima\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select test_table', 'log_path': 'D:\\survey2\\survey2\\logs'}
+[0m18:35:31.604649 [debug] [MainThread]: Tracking: tracking
+[0m18:35:33.608747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9638584a-8dd6-43b9-887e-6c03f68bf4ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8B5944D60>]}
+[0m18:35:33.690751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9638584a-8dd6-43b9-887e-6c03f68bf4ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8B59FB570>]}
+[0m18:35:33.691677 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m18:35:34.189451 [debug] [MainThread]: checksum: 4396dc23e859b3851fad708c90626262f7886e80dc4d6be758d18955a6bcc971, vars: {}, profile: survey2, target: dev, version: 1.13.0b1
+[0m18:35:34.190608 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:35:34.191307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9638584a-8dd6-43b9-887e-6c03f68bf4ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8B5904150>]}
+[0m18:35:36.170799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9638584a-8dd6-43b9-887e-6c03f68bf4ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8B71F06E0>]}
+[0m18:35:36.290379 [debug] [MainThread]: Wrote artifact WritableManifest to D:\survey2\survey2\target\manifest.json
+[0m18:35:36.293560 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\survey2\survey2\target\semantic_manifest.json
+[0m18:35:36.334140 [debug] [MainThread]: Wrote artifact OsiDocument to D:\survey2\survey2\target\osi_document.json
+[0m18:35:36.352370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9638584a-8dd6-43b9-887e-6c03f68bf4ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8A399B930>]}
+[0m18:35:36.352983 [info ] [MainThread]: Found 2 models, 4 data tests, 561 macros
+[0m18:35:36.353598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9638584a-8dd6-43b9-887e-6c03f68bf4ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8B6E7A680>]}
+[0m18:35:36.355802 [info ] [MainThread]: 
+[0m18:35:36.356405 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:35:36.356858 [info ] [MainThread]: 
+[0m18:35:36.357534 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:35:36.358740 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_big-data-dev-01-512408'
+[0m18:35:36.359174 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:35:36.359764 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'key.json''
+[0m18:35:36.360644 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:35:36.361138 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'key.json''
+[0m18:35:36.361592 [info ] [MainThread]: 
+[0m18:35:36.362180 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.00 seconds (0.00s).
+[0m18:35:36.363086 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: 'key.json'
+[0m18:35:36.365290 [debug] [MainThread]: Command `dbt run` failed at 18:35:36.365089 after 4.94 seconds
+[0m18:35:36.365859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8B72B6810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8A1C8A2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8B5B50F70>]}
+[0m18:35:36.366356 [debug] [MainThread]: Flushing usage events
+[0m18:35:40.398531 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:37:48.733005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C18DF01D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C18BA50E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1908FF9D0>]}
+
+
+============================== 18:37:48.738621 | 65d24f3f-966b-43ba-ab52-3dff403085ef ==============================
+[0m18:37:48.738621 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m18:37:48.739648 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sehar_Fatima\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select test_table', 'log_path': 'D:\\survey2\\survey2\\logs'}
+[0m18:37:48.740215 [debug] [MainThread]: Tracking: tracking
+[0m18:37:50.848538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '65d24f3f-966b-43ba-ab52-3dff403085ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A2804D60>]}
+[0m18:37:50.927144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '65d24f3f-966b-43ba-ab52-3dff403085ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A28BB570>]}
+[0m18:37:50.928115 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m18:37:51.372023 [debug] [MainThread]: checksum: 4396dc23e859b3851fad708c90626262f7886e80dc4d6be758d18955a6bcc971, vars: {}, profile: survey2, target: dev, version: 1.13.0b1
+[0m18:37:51.684300 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:37:51.685254 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:37:51.685752 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:37:51.696894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '65d24f3f-966b-43ba-ab52-3dff403085ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A3E15950>]}
+[0m18:37:51.864843 [debug] [MainThread]: Wrote artifact WritableManifest to D:\survey2\survey2\target\manifest.json
+[0m18:37:51.867978 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\survey2\survey2\target\semantic_manifest.json
+[0m18:37:51.915686 [debug] [MainThread]: Wrote artifact OsiDocument to D:\survey2\survey2\target\osi_document.json
+[0m18:37:51.941188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '65d24f3f-966b-43ba-ab52-3dff403085ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A3F4D4F0>]}
+[0m18:37:51.942094 [info ] [MainThread]: Found 2 models, 4 data tests, 561 macros
+[0m18:37:51.942901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65d24f3f-966b-43ba-ab52-3dff403085ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A3F46430>]}
+[0m18:37:51.946026 [info ] [MainThread]: 
+[0m18:37:51.946868 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:37:51.947758 [info ] [MainThread]: 
+[0m18:37:51.949194 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:37:51.951167 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_big-data-dev-01-512408'
+[0m18:37:51.952066 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:37:54.847368 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_big-data-dev-01-512408_sehar_fatima'
+[0m18:37:54.848651 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:38:00.196897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65d24f3f-966b-43ba-ab52-3dff403085ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A3F418B0>]}
+[0m18:38:00.199146 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:38:00.348368 [debug] [Thread-3 (]: Began running node model.survey2.test_table
+[0m18:38:00.350648 [info ] [Thread-3 (]: 1 of 1 START sql table model sehar_fatima.test_table ........................... [RUN]
+[0m18:38:00.353332 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.survey2.test_table'
+[0m18:38:00.354904 [debug] [Thread-3 (]: Began compiling node model.survey2.test_table
+[0m18:38:00.382846 [debug] [Thread-3 (]: Writing injected SQL for node "model.survey2.test_table"
+[0m18:38:00.385941 [debug] [Thread-3 (]: Began executing node model.survey2.test_table
+[0m18:38:00.496167 [debug] [Thread-3 (]: Writing runtime sql for node "model.survey2.test_table"
+[0m18:38:00.498121 [debug] [Thread-3 (]: On model.survey2.test_table: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "survey2", "target_name": "dev", "node_id": "model.survey2.test_table"} */
+
+  
+    
+
+    create or replace table `big-data-dev-01-512408`.`sehar_fatima`.`test_table`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m18:38:00.499179 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:38:02.855346 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=big-data-dev-01-512408&j=bq:US:91a186a8-bd80-4c65-8954-7ced4d25ff16&page=queryresults
+[0m18:38:05.913517 [debug] [Thread-3 (]: SQL status: OK in 3.057 seconds
+[0m18:38:15.351640 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '65d24f3f-966b-43ba-ab52-3dff403085ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A3F8AED0>]}
+[0m18:38:15.352613 [info ] [Thread-3 (]: 1 of 1 OK created sql table model sehar_fatima.test_table ...................... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 15.00s]
+[0m18:38:15.353680 [debug] [Thread-3 (]: Finished running node model.survey2.test_table
+[0m18:38:15.355283 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:38:15.396502 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:38:15.396951 [debug] [MainThread]: Connection 'list_big-data-dev-01-512408' was properly closed.
+[0m18:38:15.397306 [debug] [MainThread]: Connection 'list_big-data-dev-01-512408_sehar_fatima' was properly closed.
+[0m18:38:15.397653 [debug] [MainThread]: Connection 'model.survey2.test_table' was properly closed.
+[0m18:38:15.398051 [info ] [MainThread]: 
+[0m18:38:15.398643 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 23.45 seconds (23.45s).
+[0m18:38:15.399672 [debug] [MainThread]: Command end result
+[0m18:38:15.456726 [debug] [MainThread]: Wrote artifact WritableManifest to D:\survey2\survey2\target\manifest.json
+[0m18:38:15.460131 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\survey2\survey2\target\semantic_manifest.json
+[0m18:38:15.463259 [debug] [MainThread]: Wrote artifact OsiDocument to D:\survey2\survey2\target\osi_document.json
+[0m18:38:15.472694 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\survey2\survey2\target\run_results.json
+[0m18:38:15.473503 [info ] [MainThread]: 
+[0m18:38:15.474353 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:38:15.475130 [info ] [MainThread]: 
+[0m18:38:15.475811 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m18:38:15.477371 [debug] [MainThread]: Command `dbt run` succeeded at 18:38:15.477164 after 26.95 seconds
+[0m18:38:15.478227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A4553E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C18A5FE490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A3EC5770>]}
+[0m18:38:15.478980 [debug] [MainThread]: Flushing usage events
+[0m18:38:20.152708 [debug] [MainThread]: An error was encountered while trying to flush usage events

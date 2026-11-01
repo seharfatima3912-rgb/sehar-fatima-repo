@@ -1,0 +1,13 @@
+survey:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      # Set this to the local path of the service-account JSON key file.
+      keyfile: "key.json"
+      project: "big-data-dev-01-512408"
+      dataset: "Sehar_Fatima"
+      threads: 1
+      priority: interactive
+      retries: 1
